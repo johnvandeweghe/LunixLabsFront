@@ -7,11 +7,6 @@
  * # AboutCtrl
  * Controller of the lunixLabsApp
  */
-angular.module('lunixLabsApp')
+angular.module('LunixLabsApp')
   .controller('AboutCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
   });

@@ -8,10 +8,5 @@
  * Controller of the lunixLabsApp
  */
 angular.module('lunixLabsApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+.controller('MainCtrl', ['$scope', '$location', function ($scope, $location) {
+}]);

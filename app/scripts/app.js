@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name lunixLabsApp
+ * @name LunixLabsApp
  * @description
- * # lunixLabsApp
+ * # LunixLabsApp
  *
  * Main module of the application.
  */
 angular
-  .module('lunixLabsApp', [
+  .module('LunixLabsApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
