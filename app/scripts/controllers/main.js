@@ -2,11 +2,12 @@
 
 /**
  * @ngdoc function
- * @name lunixLabsApp.controller:MainCtrl
+ * @name LunixLabsApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the lunixLabsApp
+ * Controller of the LunixLabsApp
  */
-angular.module('lunixLabsApp')
-.controller('MainCtrl', ['$scope', '$location', function ($scope, $location) {
-}]);
+angular.module('LunixLabsApp')
+    .controller('MainCtrl', ['$scope', '$location', function ($scope, $location) {
+
+    }]);

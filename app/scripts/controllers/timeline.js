@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc function
- * @name LunixLabsApp.controller:AboutCtrl
+ * @name LunixLabsApp.controller:TimelineCtrl
  * @description
  * # AboutCtrl
  * Controller of the LunixLabsApp
  */
 angular.module('LunixLabsApp')
-    .controller('AboutCtrl', ['$scope', function ($scope) {
+    .controller('TimelineCtrl', ['$scope', function ($scope) {
     }]);
