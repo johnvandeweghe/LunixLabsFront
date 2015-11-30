@@ -8,5 +8,8 @@
  * Controller of the LunixLabsApp
  */
 angular.module('LunixLabsApp')
-    .controller('TimelineCtrl', ['$scope', function ($scope) {
+    .controller('TimelineCtrl', ['$scope', function ($scope, LunixRest) {
+        LunixRest.getProjects().then(function(projects){
+            $scope.projects = projects;
+        });
     }]);
