@@ -6,10 +6,11 @@
  * # LunixRest
  * Service for interacting with our own backend
  */
-angular.factory('LunixRest', function($http) {
+angular.module('LunixLabsApp')
+.factory('LunixRest', function($http) {
     return {
         getProjects: function() {
-            return $http.get('http://api.lunixlabs.com/projects')
+            return $http.get('http://localhost/public/1.0/projects.json')
                 .then(function(result) {
                     return result.data;
                 });
