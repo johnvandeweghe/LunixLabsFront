@@ -8,8 +8,8 @@
  * Controller of the LunixLabsApp
  */
 angular.module('LunixLabsApp')
-    .controller('ProjectsCtrl', ['$scope', 'LunixRest', function ($scope, LunixRest) {
+    .controller('ProjectsCtrl', function ($scope, LunixRest) {
         LunixRest.getProjects().then(function(projects){
             $scope.projects = projects;
         });
-    }]);
+    });

@@ -2,10 +2,12 @@
 <p>Sometimes I have spare time, here is stuff I've done during that time</p>
 <h3>Recent Projects</h3>
 <p>More recently I've published projects I've worked on to GitHub.</p>
-<div ng-repeat="project in projects">
-    <a href="{{project.url}}">{{project.name}}</a> -
-    <span>{{project.short_description}}</span>
-</div>
+<uib-accordion>
+    <uib-accordion-group heading="{{project.name}}" ng-repeat="project in projects | filter:{url:''}">
+        <a href="{{project.url}}">{{project.name}}</a> -
+        <span>{{project.short_description}}</span>
+    </uib-accordion-group>
+</uib-accordion>
 <h3>Older Projects</h3>
 <p>Here are some older projects that I've lost the source for, but were still interesting learning tools</p>
 

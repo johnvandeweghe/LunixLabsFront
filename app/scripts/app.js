@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.bootstrap'
     ])
     .config(function ($routeProvider) {
         $routeProvider
@@ -32,7 +33,7 @@ angular
             .when('/projects', {
                 templateUrl: 'views/projects.html',
                 controller: 'ProjectsCtrl',
-                controllerAs: 'projects'
+                controllerAs: 'projectsctrl'
             })
             .otherwise({
                 redirectTo: '/'
