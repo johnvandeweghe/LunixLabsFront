@@ -12,4 +12,9 @@ angular.module('LunixLabsApp')
         LunixRest.getProjects().then(function(projects){
             $scope.projects = projects;
         });
+        $scope.openLink = function(url, $event){
+            window.open(url, '_blank');
+            $event.preventDefault();
+            $event.stopPropagation();
+        };
     });

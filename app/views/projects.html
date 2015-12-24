@@ -3,9 +3,13 @@
 <h3>Recent Projects</h3>
 <p>More recently I've published projects I've worked on to GitHub.</p>
 <uib-accordion>
-    <uib-accordion-group heading="{{project.name}}" ng-repeat="project in projects | filter:{url:''}">
-        <a href="{{project.url}}">{{project.name}}</a> -
-        <span>{{project.short_description}}</span>
+    <uib-accordion-group is-open="isopen" ng-click="isopen=!isopen" ng-repeat="project in projects | filter:{url:''} | orderBy:'name'">
+        <uib-accordion-heading>
+            <span>{{project.name}} - {{project.short_description}}</span>
+            <span class="pull-right glyphicon glyphicon-new-window external-link" ng-click="openLink('{{project.url}}', $event)" aria-hidden="true"></span>
+
+        </uib-accordion-heading>
+        <span>{{project.description}}</span>
     </uib-accordion-group>
 </uib-accordion>
 <h3>Older Projects</h3>
