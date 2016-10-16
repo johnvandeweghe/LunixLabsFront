@@ -10,7 +10,7 @@ angular.module('LunixLabsApp')
 .factory('LunixRest', function($http) {
     return {
         getProjects: function() {
-            return $http.get('http://localhost:8080/1.0/projects.json')
+            return $http.get(window.__lunixEnv.apiUrl)
                 .then(function(result) {
                     return result.data;
                 });
