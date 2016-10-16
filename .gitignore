@@ -1,5 +1,5 @@
 /.idea
-/LunixLabs.iml
+*.iml
 /node_modules
 /dist
 /.tmp
